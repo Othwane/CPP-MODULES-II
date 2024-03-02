@@ -26,6 +26,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat const & executor) const {
 		return;
 	}
 	filename << "" << std::endl;
+	filename.close();
 }
 
 ShrubberyCreationForm::~ShrubberyCreationForm(){
