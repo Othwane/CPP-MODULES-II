@@ -12,10 +12,8 @@ Bureaucrat::Bureaucrat(std::string const &_name, int _grade): name(_name), grade
 Bureaucrat::Bureaucrat(Bureaucrat const & crat): name(crat.name), grade(crat.grade){}
 
 Bureaucrat& Bureaucrat::operator=(Bureaucrat const & crat){
-	if (this != &crat){
-		const_cast <std::string&>(name) = crat.name;
+	if (this != &crat)
 		this->grade = crat.getGrade();
-	}
 	return *this;
 }
 

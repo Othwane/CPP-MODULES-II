@@ -25,12 +25,8 @@ AForm::AForm(AForm const & form):
 
 
 AForm& AForm::operator=(AForm const & form){
-    if (this != &form){
-        const_cast<std::string&>(name) = form.name;
+    if (this != &form)
         is_signed = form.is_signed;
-        const_cast<int&>(gr_sign) = form.gr_sign;
-        const_cast<int&>(gr_exec) = form.gr_exec;
-    }
     return *this;
 }
 
