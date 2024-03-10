@@ -17,7 +17,7 @@ int main(){
 		n.beSigned(x);
 		x.executeForm(n);
 
-		PresidentialPardonForm i("Siii");
+		PresidentialPardonForm i("AGY");
 		i.beSigned(x);
 		x.executeForm(i);
 	}
