@@ -3,6 +3,7 @@
 #define DATA_HPP
 
 #include <stdint.h>
+#include <string>
 
 struct Data {
     int value;
